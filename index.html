@@ -71,24 +71,32 @@
     <section>
 
       <h2>Новости</h2>
-      <p>
-        НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР!
-        ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК
-        ВО ВРЕМЯ СТРИЖКИ
-      </p>
-      <time datetime="01-11">11 января</time>
+      <ul>
+        <li>
+          <p>
+            НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР!
+            ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК
+            ВО ВРЕМЯ СТРИЖКИ
+          </p>
+          <time datetime="2019-01-11">11 января</time>
 
-      <p>
-        В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА»
-        СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА
-        ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ
-      </p>
-      <time datetime="01-18">18 января</time>
+        </li>
+        <li>
+          <p>
+            В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА»
+            СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА
+            ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ
+          </p>
+          <time datetime="01-18">18 января</time>
+
+        </li>
+      </ul>
 
       <h2>Фотогалерея</h2>
       <a href="">
         <img src="./img/gallery/pic01.jpg" alt="Зал Барбершопа">
       </a>
+
       <button>назад</button>
       <button>вперёд</button>
 
@@ -106,6 +114,9 @@
         ПН—ПТ: С 10:00 ДО 22:00 <br>
         СБ—ВС: С 10:00 ДО 19:00
       </p>
+
+      <a href="">Как проехать</a>
+      <a href="">Обратная связь</a>
 
       <h2>Записаться</h2>
       <p>
@@ -133,28 +144,52 @@
   <!-- footer -->
   <footer>
     <h2>Основаная Информация</h2>
+    <p>
+      БАРБЕРШОП «БОРОДИНСКИЙ»
+      АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8
+      КАК НАС НАЙТИ?
+      ТЕЛЕФОН: +7 (495) 666-02-66
+    </p>
+    <div>
+      <p>Давайте дружить!</p>
+      <ul>
+        <li><a href="">vk</a></li>
+        <li><a href="">facebook</a></li>
+        <li><a href="">instagram</a></li>
+      </ul>
+    </div>
 
-    <ul>
-      <li>
-        <p>
-          БАРБЕРШОП «БОРОДИНСКИЙ»
-          АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8
-          КАК НАС НАЙТИ?
-          ТЕЛЕФОН: +7 (495) 666-02-66
-        </p>
-      </li>
-      <li>
-        <span>Давайте дружить!</span>
-        <a href="">vk</a>
-        <a href="">facebook</a>
-        <a href="">instagram</a>
-      </li>
-      <li>
-        <span>разработано:</span>
-        <a href="https://htmlacademy.ru/">HTML ACADEMY</a>
-      </li>
-    </ul>
+    <p>разработано:</p>
+    <a href="https://htmlacademy.ru/">HTML ACADEMY</a>
+
   </footer>
+
+  <!-- popup Личный кабинет -->
+  <section>
+    <form action=".php">
+      <label for="login">Логин</label>
+      <input type="text" id="login" name="login">
+
+      <label for="pass">Пароль</label>
+      <input type="password" id="pass" name="password">
+
+      <label for="remember">Запомните меня</label>
+      <input type="checkbox" id="remember" checked>
+
+      <a href="">Я забыл пароль!</a>
+
+      <button>Войти</button>
+    </form>
+    <button>Закрыть</button>
+  </section>
+  <!-- /popup Личный кабинет -->
+
+  <!-- popup Карта -->
+  <section>
+    <h2>Как до нас Добраться</h2>
+  </section>
+  <!-- /popup карта -->
+
   <!-- /footer -->
 </body>
 
