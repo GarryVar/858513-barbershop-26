@@ -5,13 +5,12 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Барбершоп</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p> -->
-
   <!-- header -->
-  <header>
+  <header class="header">
     <!-- logo -->
     <a href="./index.html">
       <img src="./img/logo.svg" alt="Логотип Барбершоп 'Бородинский'" width="371" height="155">
@@ -20,123 +19,137 @@
     <!-- /logo -->
 
     <!-- nav -->
-    <nav>
+    <nav class="nav">
       <ul>
-        <li><a href="">информация</a></li>
-        <li><a href="">новости</a></li>
-        <li><a href="">прайс-лист</a></li>
-        <li><a href="">магазин</a></li>
-        <li><a href="">контакты</a></li>
+        <li class="nav__item"><a class="nav__link" href="">информация</a></li>
+        <li class="nav__item"><a class="nav__link" href="">новости</a></li>
+        <li class="nav__item"><a class="nav__link" href="">прайс-лист</a></li>
+        <li class="nav__item"><a class="nav__link" href="./barbershop-shop.html">магазин</a></li>
+        <li class="nav__item"><a class="nav__link" href="">контакты</a></li>
       </ul>
-      <button>вход</button>
+      <button class="button button--enter">вход</button>
     </nav>
     <!-- /nav -->
 
   </header>
   <!-- /header -->
 
-  <main>
-    <h1>Средства для ухода</h1>
+  <!-- main -->
+  <main class="main">
+    <h2>Средства для ухода</h2>
 
-    <ul>
-      <li><a href="./index.html">Главная</a></li>
-      <li><a href="">Магазин</a></li>
-      <li>Средства для Ухода</li>
-    </ul>
+    <!-- bredcrumbs -->
+    <div class="bredcrumbs">
 
-    <section>
-      <h2>Фильтр товаров</h2>
+      <ol class="bredcrumbs__list">
+        <li class="bredcrumbs__item"><a class="bredcrumbs__link" href="./index.html">Главная</a></li>
+        <li class="bredcrumbs__item"><a class="bredcrumbs__link" href="">Магазин</a></li>
+        <li class="bredcrumbs__item">Средства для Ухода</li>
+      </ol>
+
+    </div>
+    <!-- /bredcrumbs -->
+
+    <!-- filter -->
+    <section class="filter">
+
+      <h2 class="filter__title">Фильтр товаров</h2>
 
       <form action=".php">
-        <h3>Производители</h3>
+        <fieldset>
+          <legend>Производители</legend>
 
-        <p>
-          <input type="checkbox" id="1" checked>
-          <label for="1">Baxter of California</label>
-        </p>
+          <p>
+            <input type="checkbox" id="1" checked>
+            <label for="1">Baxter of California</label>
+          </p>
 
-        <p>
-          <input type="checkbox" id="2">
-          <label for="2">Mr Natty</label>
-        </p>
+          <p>
+            <input type="checkbox" id="2">
+            <label for="2">Mr Natty</label>
+          </p>
 
-        <p>
-          <input type="checkbox" id="3" checked>
-          <label for="3">Suavecito</label>
-        </p>
+          <p>
+            <input type="checkbox" id="3" checked>
+            <label for="3">Suavecito</label>
+          </p>
 
-        <p>
-          <input type="checkbox" id="4">
-          <label for="4">Malin+Goetz</label>
-        </p>
+          <p>
+            <input type="checkbox" id="4">
+            <label for="4">Malin+Goetz</label>
+          </p>
 
-        <p>
-          <input type="checkbox" id="5">
-          <label for="5">Murray’s</label>
-        </p>
+          <p>
+            <input type="checkbox" id="5">
+            <label for="5">Murray’s</label>
+          </p>
 
-        <p>
-          <input type="checkbox" id="6" checked>
-          <label for="6">American Crew</label>
-        </p>
+          <p>
+            <input type="checkbox" id="6" checked>
+            <label for="6">American Crew</label>
+          </p>
 
-        <h3>Группы товаров:</h3>
+        </fieldset>
 
-        <p>
-          <input type="radio" id="7">
-          <label for="7">Бритвенные принадлежности</label>
-        </p>
+        <fieldset>
+          <legend>Группы товаров:</legend>
+          <p>
+            <input type="radio" id="7">
+            <label for="7">Бритвенные принадлежности</label>
+          </p>
 
-        <p>
-          <input type="radio" id="8" checked>
-          <label for="8">средсттва для ухода</label>
-        </p>
+          <p>
+            <input type="radio" id="8" checked>
+            <label for="8">средсттва для ухода</label>
+          </p>
 
-        <p>
-          <input type="radio" id="9">
-          <label for="9">аксессуары</label>
-        </p>
+          <p>
+            <input type="radio" id="9">
+            <label for="9">аксессуары</label>
+          </p>
+        </fieldset>
 
+        <button class="button button--submit">Показать</button>
       </form>
+
     </section>
+    <!-- /filter -->
 
-    <section>
+    <!-- products -->
+    <section class="products">
 
-      <h2>Список средств ухода</h2>
-      <ul>
-        <li>
+      <h2 class="products__title">Средства ухода</h2>
 
-          <a href="">
-            <h3>
-              <sapn>Набор для путешествий</sapn>
-              <span>«Baxter of California»</span>
-            </h3>
+      <ol class="products__list">
+        <li class="products__item">
+
+          <a href="#">
+            <p>Набор для путешествий</p>
+            <p><strong>«Baxter of California»</strong></p>
           </a>
 
           <p>
-            <a href="">
+            <a href="#">
               <img src="./img/product.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
             </a>
           </p>
 
           <p>
             <b>2900 ₽</b>
-            <a href="">Купить</a>
+            <a href="#">Купить</a>
           </p>
 
         </li>
 
-        <li>
+        <li class="products__item">
 
-          <a href="">
-            <h3>
-              <sapn>Увлажняющий кондиционер</sapn>
-              <span>«Baxter of California»</span>
-            </h3>
+          <a href="#">
+            <p>Увлажняющий кондиционер</p>
+            <p><strong>«Baxter of California»</strong></p>
           </a>
 
           <p>
-            <a href="">
+            <a href="#">
               <img src="./img/product02.jpg" width="220" height="165"
                 alt="Увлажняющий кондиционер «Baxter of California»">
             </a>
@@ -144,160 +157,184 @@
 
           <p>
             <b>750 ₽</b>
-            <a href="">Купить</a>
+            <a href="#">Купить</a>
           </p>
 
         </li>
 
-        <li>
+        <li class="products__item">
 
-          <a href="">
-            <h3>
-              <sapn>Гель для волос</sapn>
-              <span>«SUAVECITO»</span>
-            </h3>
+          <a href="#">
+            <p>Гель для волос</p>
+            <p><strong>«Suavecito»</strong></p>
           </a>
 
           <p>
-            <a href="">
+            <a href="#">
               <img src="./img/product03.jpg" width="220" height="165" alt="Гель для волос «SUAVECITO»">
             </a>
           </p>
 
           <p>
             <b>290 ₽</b>
-            <a href="">Купить</a>
+            <a href="#">Купить</a>
           </p>
 
         </li>
 
-        <li>
+        <li class="products__item">
 
-          <a href="">
-            <h3>
-              <sapn>Глина для укладки волос</sapn>
-              <span>«American crew»</span>
-            </h3>
+          <a href="#">
+            <p>Глина для укладки волос</p>
+            <p><strong>«American crew»</strong></p>
           </a>
 
           <p>
-            <a href="">
+            <a href="#">
               <img src="./img/product04.jpg" width="220" height="165" alt="Глина для укладки волос «American crew»">
             </a>
           </p>
 
           <p>
             <b>500 ₽</b>
-            <a href="">Купить</a>
+            <a href="#">Купить</a>
           </p>
         </li>
 
-        <li>
+        <li class="products__item">
 
-          <a href="">
-            <h3>
-              <sapn>Гель для волос</sapn>
-              <span>«American crew»</span>
-            </h3>
+          <a href="#">
+            <p>Гель для волос</p>
+            <p><strong>«American crew»</strong></p>
           </a>
 
           <p>
-            <a href="">
+            <a href="#">
               <img src="./img/product05.jpg" width="220" height="165" alt="Гель для волос «American crew»">
             </a>
           </p>
 
           <b>300 ₽</b>
-          <a href="">Купить</a>
+          <a href="#">Купить</a>
         </li>
 
-        <li>
+        <li class="products__item">
 
-          <a href="">
-            <h3>
-              <sapn>Набор для бритья</sapn>
-              <span>«Baxter of California»</span>
-            </h3>
+          <a href="#">
+            <p>Набор для бритья</p>
+            <p><strong>«Baxter of California»</strong></p>
           </a>
 
           <p>
-            <a href="">
+            <a href="#">
               <img src="./img/product06.jpg" width="220" height="165" alt="Гель для волос «American crew»">
             </a>
           </p>
 
           <p>
             <b>3900 ₽</b>
-            <a href="">Купить</a>
+            <a href="#">Купить</a>
           </p>
 
         </li>
+      </ol>
 
-      </ul>
-
-      <ul>
-        <li><a href="">1</a></li>
-        <li><a href="">2</a></li>
-        <li><a href="">3</a></li>
-        <li><a href="">4</a></li>
-      </ul>
     </section>
+    <!-- /products -->
+
+    <!-- pagination -->
+    <div class="pagination">
+
+      <ol class="pagination__list">
+        <li class="pagination__item"><a href="" class="pagination__link">1</a></li>
+        <li class="pagination__item"><a href="" class="pagination__link">2</a></li>
+        <li class="pagination__item"><a href="" class="pagination__link">3</a></li>
+        <li class="pagination__item"><a href="" class="pagination__link">4</a></li>
+      </ol>
+
+    </div>
+    <!-- /pagination -->
 
   </main>
+  <!-- /main -->
 
   <!-- footer -->
-  <footer>
-    <h2>Основаная Информация</h2>
+  <footer class="footer">
+    <h2 class="footer__title">Основаная Информация</h2>
 
     <p>
-      БАРБЕРШОП «БОРОДИНСКИЙ»
-      АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8
-      КАК НАС НАЙТИ?
+      БАРБЕРШОП «БОРОДИНСКИЙ» <br>
+      АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8 <br>
+      КАК НАС НАЙТИ? <br>
       ТЕЛЕФОН: +7 (495) 666-02-66
     </p>
 
-    <p>
-      <b>Давайте дружить!</b>
-    </p>
-    <ul>
-      <li><a href="">vk</a></li>
-      <li><a href="">facebook</a></li>
-      <li><a href="">instagram</a></li>
-    </ul>
+    <div class="social footer__social">
+      <p>Давайте дружить!</p>
 
-    <p>
-      <b>разработано:</b>
-    </p>
-    <a href="https://htmlacademy.ru/">HTML ACADEMY</a>
+      <ul class="socials__list">
+        <li class="social__item"><a class="social__link" href="">vk</a></li>
+        <li class="social__item"><a class="social__link" href="">facebook</a></li>
+        <li class="social__item"><a class="social__link" href="">instagram</a></li>
+      </ul>
+    </div>
+
+    <p>разработано:</p>
+    <a class="social__link social__link--htmlacademy " href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy</a>
 
   </footer>
   <!-- /footer -->
 
   <!-- popup Личный кабинет -->
-  <section>
-    <form action=".php">
-      <label for="login">Логин</label>
-      <input type="text" id="login" name="login">
+  <section class="popup">
+    <h2>Личный Кабинет</h2>
 
-      <label for="pass">Пароль</label>
-      <input type="password" id="pass" name="password">
+    <p>
+      <strong>Введите пожалуйста свой логин и пароль</strong>
+    </p>
 
-      <label for="remember">Запомните меня</label>
-      <input type="checkbox" id="remember" checked>
+    <fieldset class="popup__user-account">
+      <legend class="popup__caption">Форма ввода личных данных</legend>
 
-      <a href="">Я забыл пароль!</a>
+      <form action=".php">
 
-      <button>Войти</button>
-    </form>
-    <button>Закрыть</button>
+        <p>
+          <label for="login">Логин</label>
+          <input type="text" id="login" name="login">
+        </p>
+
+        <p>
+          <label for="pass">Пароль</label>
+          <input type="password" id="pass" name="password">
+        </p>
+
+        <p>
+          <label for="remember">Запомните меня</label>
+          <input type="checkbox" id="remember" checked>
+        </p>
+
+        <a href="#">Я забыл пароль!</a>
+
+        <button class="button button--enter">Войти</button>
+      </form>
+      <button class="button button--close">Закрыть</button>
+
+    </fieldset>
   </section>
   <!-- /popup Личный кабинет -->
 
   <!-- popup Карта -->
-  <section>
-    <h2>Как до нас Добраться</h2>
+  <section class="popup popup--map">
+
+    <h2 class="popup__title">Как до нас Добраться</h2>
+    <!-- <iframe class="popup__map" src="" frameborder="0"></iframe> -->
+    <img src="img/map.png" alt="Карта проезда до Барбершопа" width="766" height="560">
+
+    <button class="button button--close">Закрыть</button>
+
   </section>
   <!-- /popup карта -->
+
 
 </body>
 
