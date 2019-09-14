@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'PTSansBold';
+  src: url('../fonts/web/ptsansnarrowbold.woff') format('woff'), url('../fonts/web/ptsansnarrowbold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: light;
+}
+
+@font-face {
+  font-family: 'PTSansNarrow';
+  src: url('../fonts/ralewayregular.eot');
+  src: url('../fonts/ralewayregular.eot?#iefix') format('embedded-opentype'), url('../fonts/ralewayregular.woff') format('woff'), url('../fonts/ralewayregular.ttf') format('truetype'), url('../fonts/.svg#Ralewayregular') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
