@@ -1,0 +1,48 @@
+.features__body {
+  margin-bottom: 85px;
+  padding-top: 80px;
+}
+
+.features__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features__item {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+
+  width: 300px;
+
+  &--decor {
+    position: relative;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 45px;
+      left: 50%;
+
+      width: 28px;
+      height: 28px;
+
+      background-color: rgb(255, 255, 255);
+
+      transform: translateX(-50%) rotate(45deg);
+    }
+  }
+
+}
+
+.features__title {
+  margin-bottom: 77px;
+
+  font-size: 30px;
+  text-align: center;
+}
+
+.features__text {
+  text-align: center;
+}

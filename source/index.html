@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Барбершоп</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__body">
+
+
+      <div class="page-header__logo">
+        <img src="img/index-logo.png"
+            alt="Логотип Барбершоп 'Бородинский'"
+            width=" 371"
+            height="155">
+      </div>
+
+
+      <nav class="main-nav main-nav--bg-black">
+        <div class="wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item
+                      main-nav__item--current">
+              <a class="main-nav__link" href="">информация</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">новости</a>
+            </li>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="barbershop-price.html">прайс-лист</a>
+            </li>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="barbershop-shop.html">магазин</a>
+            </li>
+
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">контакты</a>
+            </li>
+
+            <li class="main-nav__item
+                        main-nav__item--login">
+              <a class="main-nav__link" href="">вход</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Барбершоп - Бородинский</h1>
+    <div class="wrapper">
+      <section class="features">
+        <h2 class="visually-hidden">Наши приемущества</h2>
+        <div class="features__body">
+          <ol class="features__list">
+            <li class="features__item
+                       features__item--decor">
+              <h3 class="features__title">быстро</h3>
+              <p class="features__text">МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+            </li>
+
+            <li class="features__item
+                       features__item--decor">
+              <h3 class="features__title">круто</h3>
+              <p class="features__text">ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+            </li>
+
+            <li class="features__item
+                       features__item--decor">
+              <h3 class="features__title">дорого</h3>
+              <p class="features__text">НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕННЫЙ СТАТУС?</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <div class="page-main__row">
+        <section class="news">
+          <div class="news__body">
+            <h2 class="news__title">новости</h2>
+            <ol class="news__list">
+              <li class="news__item">
+                <p class="news__text">НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+                <p class="news__date">15 января</p>
+              </li>
+
+              <li class="news__item">
+                <p class="news__text">В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРА</p>
+                <p class="news__date">18 января</p>
+              </li>
+            </ol>
+            <a class="news__more" href="#">все новости</a>
+          </div>
+        </section>
+
+        <section class="gallery">
+          <div class="gallery__body">
+            <h2 class="gallery__title">фотогаллерея</h2>
+            <div class="gallery__slider">
+              <ol class="gallery__list">
+                <li class="gallery__item">
+                  <img class="gallery__picture" src="img/gallery-item01.jpg" alt="">
+                </li>
+
+                <li class="gallery__item">
+                  <img class="gallery__picture" src="img/slider03.jpg" alt="">
+                </li>
+
+                <li class="gallery__item">
+                  <img class="gallery__picture" src="img/slider04.jpg" alt="">
+                </li>
+              </ol>
+            </div>
+
+            <ol class="gallery__toggles">
+              <li class="gallery__toggles-item">
+                <a class="gallery__toggler" href="" data-action="back">назад</a>
+              </li>
+              <li class="gallery__toggles-item">
+                <a class="gallery__toggler" href="" data-action="forward">вперед</a>
+              </li>
+            </ol>
+          </div>
+        </section>
+      </div>
+      <div class="page-main__row">
+        <section class="contact-info">
+          <h2 class="visually-hidden">Наша контактная информация</h2>
+          <div class="contact-info__body">
+            <h3 class="contact-info__title">Контактная информация</h3>
+            <p class="contact-info__text">
+              Барбершоп "Бородинский"<br>
+              адрес: г. Санкт-петербург, б. Конюшенная, д. 19/8 <br>
+              телефон:+7(495)666-02-66
+            </p>
+            <p class="contact-info__text">
+              время работать:<br>
+              пн-пт: c 10:00 до22:00<br>
+              сб-вс: c 10:00 до 19-00
+            </p>
+            <div class="contact-info__location">
+              <a class="contact-info__map" href="">как проехать</a>
+              <a class="contact-info__feedback" href="">обратная связь</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="entry">
+        <div class="entry__body">
+          <h2 class="entry__title">Записаться</h2>
+          <form action="" class="entry__form">
+            <fieldset class="entry__form-inner">
+              <legend class="visually-hidden">Запишись на стрижку</legend>
+              <p class="entry__text">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+              <div class="entry__form-body">
+                <div class="entry__form-row">
+                  <label for="date">Дата</label>
+                  <input id="date" type="text" placeholder="08.10.2020">
+                </div>
+
+                <div class="entry__form-row">
+                  <label for="time">Время</label>
+                  <input id="time" type="text" placeholder="10:00">
+                </div>
+
+                <div class="entry__form-row">
+                  <label for="name">В аше имя</label>
+                  <input id="name" type="text" placeholder="Игорь">
+                </div>
+                <div class="entry__form-row">
+                  <label for="tel">Телефон </label>
+                  <input id="tel" type="text" placeholder="+79787737390">
+                </div>
+                <button class="entry__form-submit" type="submit">Отправить</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <script src="js/slider.min.js"></script>
+</body>
+</html>
