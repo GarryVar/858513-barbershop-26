@@ -1,3 +1,6 @@
+node_modules/
+build/
+package-lock.json
 .DS_Store
 .idea
 .vscode
@@ -7,7 +10,6 @@
 *.psd
 *.json
 *.sublime*
-node_modules/
 npm-debug.*
-Thumbs.db 
+Thumbs.db
 gulpfile.js
