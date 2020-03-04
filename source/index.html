@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 
 <html lang="ru">
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Барбершоп</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -14,10 +15,14 @@
 
 
       <div class="page-header__logo">
-        <img src="img/index-logo.png"
-            alt="Логотип Барбершоп 'Бородинский'"
-            width=" 371"
-            height="155">
+        <picture>
+          <source media="(min-width: 760px)"
+                  srcset="img/index-logo.png">
+          <img src="img/index-logo.png"
+              alt="Логотип Барбершоп 'Бородинский'"
+              width=" 371"
+              height="155">
+        </picture>
       </div>
 
 
@@ -188,6 +193,71 @@
       </div>
     </div>
   </main>
+
+  <footer class="page-footer page-footer--bg">
+    <div class="wrapper">
+      <div class="page-footer__body">
+
+        <div class="page-footer__address">
+          <p class="page-footer__text">
+            БАРБЕРШОП «БОРОДИНСКИЙ» <br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. <br> КОНЮШЕННАЯ, Д. 19/8 <br> КАК НАС НАЙТИ? ТЕЛЕФОН: +7 (495) 666-02-66
+          </p>
+        </div>
+
+        <div class="page-footer__socials">
+          <div class="socials">
+          <p class="socials__text">Давайте дружить</p>
+            <ol class="socials__list">
+              <li class="socials__item">
+              <a href="" class="socials__link" aria-label="Мы во Вконтакте">
+
+              </a>
+              </li>
+
+              <li class="socials__item">
+                <a href="" class="socials__link" aria-label="Мы в facebook">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22">
+                    <path fill="#ffffff" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="socials__item">
+                <a href="" class="socials__link" aria-label="Мы в instagram"></a>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="page-footer__copyright"></div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- modal -->
+  <section class="modal modal--position">
+    <div class="modal__body">
+      <h2 class="modal__title">Личный Кабинет</h2>
+      <form class="modal__form" action="">
+        <fieldset>
+          <legend class="modal__form-legend">Введите пожалуйста свой логин и пароль</legend>
+          <div class="modal__form-body">
+            <div class="modal__form-column">
+              <label for="login">Логин</label>
+              <input id="login" type="text">
+            </div>
+            <div class="modal__form-column">
+              <label for="pass">Пароль</label>
+              <input id="pass" type="password">
+            </div>
+          </div>
+        </fieldset>
+      </form>
+      <button class="modal__close" type="button"></button>
+    </div>
+  </section>
+  <!-- /modal -->
   <script src="js/slider.min.js"></script>
+  <script src="js/events.min.js"></script>
 </body>
 </html>
