@@ -10,6 +10,11 @@
     animation-duration: 0.2s;
   }
 
+  &--error {
+   animation-name: error;
+  animation-duration: 0.2s;
+  }
+
   &--position {
     position: absolute;
 
@@ -82,7 +87,6 @@
 .modal__form-column {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
   margin-bottom: 10px;
   padding-left: 10px;
@@ -93,6 +97,11 @@
   border: 2px solid rgb(0, 0, 0);
 
   color: rgb(0, 0, 0);
+
+  &:hover,
+  &:focus {
+    border-color:  #663d15;
+  }
 
   input {
     margin-left: 10px;
@@ -107,6 +116,48 @@
 
     background-color: transparent;
     border: 0;
+  }
+
+  &--login {
+    position: relative;
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      right: 13px;
+
+      width: 13px;
+      height: 13px;
+
+      background-image: url('../img/icon-user.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 13px 13px;
+
+      transform: translateY(-50%);
+    }
+  }
+
+  &--password {
+    position: relative;
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      right: 13px;
+
+      width: 13px;
+      height: 13px;
+
+      background-image: url('../img/icon-lock.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 13px 13px;
+
+      transform: translateY(-50%);
+    }
   }
 }
 
@@ -211,3 +262,15 @@ input[type="checkbox"]:checked + .modal__form-checkbox {
     opacity: 1;
   }
 }
+
+@keyframes error {
+  0% {
+    transform: translateX(5px) translateX(-50%);
+  }
+
+  100% {
+    transform: translateY(-5px) translateX(-50%);
+  }
+}
+
+
