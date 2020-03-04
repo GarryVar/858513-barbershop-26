@@ -15,14 +15,12 @@
 
 
       <div class="page-header__logo">
-        <picture>
-          <source media="(min-width: 760px)"
-                  srcset="img/index-logo.png">
-          <img src="img/index-logo.png"
-              alt="Логотип Барбершоп 'Бородинский'"
-              width=" 371"
-              height="155">
-        </picture>
+        <source media="(min-width: 760px)"
+                srcset="img/logo-min.svg">
+        <img src="img/logo.svg"
+            alt="Логотип Барбершоп 'Бородинский'"
+            width=" 371"
+            height="155">
       </div>
 
 
@@ -50,7 +48,8 @@
             </li>
 
             <li class="main-nav__item
-                        main-nav__item--login">
+                        main-nav__item--login"
+                        data-action="openModal">
               <a class="main-nav__link" href="">вход</a>
             </li>
           </ul>
@@ -250,14 +249,24 @@
               <label for="pass">Пароль</label>
               <input id="pass" type="password">
             </div>
+            <div class="modal__form-agreeds">
+              <input class="visually-hidden" id="ckeckbox" type="checkbox" checked>
+              <span class="modal__form-checkbox"></span>
+              <label for="ckeckbox">Запомните меня</label>
+              <a href="">Я забыл пароль!</a>
+            </div>
+            <button class="modal__form-submit" type="submit">Войти</button>
           </div>
         </fieldset>
       </form>
-      <button class="modal__close" type="button"></button>
+      <button class="modal__close" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 12 12"><path d="M11.12 2a.4.4 0 0 1 0 .57L8 5.71a.4.4 0 0 0 0 .57l3.14 3.14a.4.4 0 0 1 0 .57L10 11.13a.41.41 0 0 1-.57 0L6.27 8a.41.41 0 0 0-.57 0l-3.14 3.12a.41.41 0 0 1-.57 0L.85 10a.4.4 0 0 1 0-.57L4 6.28a.4.4 0 0 0 0-.57L.85 2.57a.4.4 0 0 1 0-.57L2 .86a.41.41 0 0 1 .57 0L5.7 4a.4.4 0 0 0 .57 0L9.41.87a.41.41 0 0 1 .57 0z"/></svg>
+      </button>
     </div>
   </section>
   <!-- /modal -->
   <script src="js/slider.min.js"></script>
+  <script src="js/modal.min.js"></script>
   <script src="js/events.min.js"></script>
 </body>
 </html>
