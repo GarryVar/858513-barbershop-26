@@ -247,12 +247,12 @@
           <fieldset>
             <legend class="modal__form-legend">Введите пожалуйста свой логин и пароль</legend>
             <div class="modal__form-body">
-              <div class="modal__form-column">
+              <div class="modal__form-column modal__form-column--login">
                 <label for="login">Логин</label>
                 <input id="login" type="text">
               </div>
 
-              <div class="modal__form-column">
+              <div class="modal__form-column modal__form-column--password">
                 <label for="pass">Пароль</label>
                 <input id="pass" type="password">
               </div>
@@ -263,7 +263,7 @@
                 <label for="checkbox">Запомните меня</label>
                 <a href="">Я забыл пароль!</a>
               </div>
-              <button class="modal__form-submit" type="submit">Войти</button>
+              <button class="modal__form-submit" type="submit" data-action="submit">Войти</button>
             </div>
           </fieldset>
         </form>
