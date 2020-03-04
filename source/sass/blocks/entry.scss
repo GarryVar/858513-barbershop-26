@@ -1,5 +1,5 @@
 .entry__title,
-.entry__text  {
+.entry__text {
   margin-bottom: 26px;
 }
 
@@ -38,8 +38,21 @@
     width: 140px;
     height: 43px;
 
+
+    &:hover,
+    &:focus {
+      border-color: #663d15;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.4);
+      background-color: #663000;
+    }
+
     &::placeholder {
       color: #4a4948;
+      font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
+      font-size: 14px;
       font-weight: bold;
       text-transform: uppercase;
     }
@@ -75,5 +88,10 @@
   &:hover,
   &:focus {
     background-color: #663d15;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.4);
+    background-color: #663000;
   }
 }

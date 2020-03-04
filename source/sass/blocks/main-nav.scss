@@ -13,7 +13,7 @@
   min-height: 72px;
 }
 
-@media(max-width: 760px) {
+@media (max-width: 760px) {
   .main-nav {
     &--bg-black {
       background-color: brown;
@@ -68,9 +68,9 @@
       width: 14px;
       height: 14px;
 
-      background-image: url('../img/login.svg');
+      background-image: url("../img/login.svg");
 
-      transform: translatey(-50%);
+      transform: translateY(-50%);
     }
   }
 
@@ -80,11 +80,11 @@
   }
 
   &:last-child {
-    margin-left:  auto;
+    margin-left: auto;
   }
 }
 
-@media(max-width: 760px) {
+@media (max-width: 760px) {
   .main-nav__item {
     min-width: 100%;
 
@@ -96,4 +96,3 @@
 .main-nav__link {
   color: rgb(255, 255, 255);
 }
-

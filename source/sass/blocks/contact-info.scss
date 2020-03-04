@@ -42,4 +42,9 @@
   &:focus {
     background-color: #663d15;
   }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.4);
+    background-color: #663000;
+  }
 }
