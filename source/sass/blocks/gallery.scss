@@ -16,12 +16,9 @@
 
 .gallery__slider {
   position: relative;
-  padding: 8px;
 
-  max-width: 300px;
-  max-height: 164px;
-
-  background-color: rgb(255, 255, 255);
+  width: 300px;
+  height: 164px;
 
   overflow: hidden;
 }
@@ -30,23 +27,16 @@
   position: relative;
   top: 0;
   left: 0;
+
   display: flex;
 
-  max-width: 300px;
+  width: 300px;
   max-height: 164px;
 
   transition: ease 1s;
 }
 
 .gallery__item {
-  position: relative;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-
-  flex-shrink: 0;
-
   min-width: 300px;
 }
 

@@ -18,7 +18,7 @@
 
 
   function forwardMove(slide) {
-    if (leftNumber > -200) {
+    if (leftNumber > -300) {
         leftNumber = leftNumber - 100;
         slide.style.left = `${leftNumber}%`;
 
@@ -39,5 +39,6 @@
     }
 
   });
+
 })();
 

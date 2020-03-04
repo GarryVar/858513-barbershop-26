@@ -1,6 +1,8 @@
 .page-footer {
   &--bg {
+    background-image: url('../img/footer-bg.png');
     background-color: #242424;
+    background-repeat: repeat-x;
   }
 }
 
@@ -30,4 +32,23 @@
 .page-footer__copyright {
   padding-left: 10px;
   width: 160px;
+}
+
+.page-footer__copyright-text {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+
+.page-footer__copyright-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 140px;
+  height: 43px;
+
+  color: rgb(255, 255, 255);
+
+  background-color: rgb(0, 0, 0);
 }

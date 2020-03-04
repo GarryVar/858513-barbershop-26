@@ -26,6 +26,10 @@ html {
   box-sizing: inherit;
 }
 
+*:focus {
+  box-shadow: 0 0 0 #288ddb;
+}
+
 body {
   position: relative;
 
@@ -106,7 +110,6 @@ p {
 @media(max-width: 760px) {
   .wrapper {
     padding: 0 15px;
-    max-width: 760px;
   }
 }
 

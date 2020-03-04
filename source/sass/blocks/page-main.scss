@@ -1,4 +1,6 @@
 .page-main__row {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
 
@@ -11,8 +13,27 @@
   color: rgb(0, 0, 0);
 
   background-color: #f7f4f1;
+  background-image: url('../img/section-bg.png');
+  background-repeat: repeat-x;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 20px;
+    height: 245px;
+
+    background-image: url('../img/separator.png');
+    background-repeat: no-repeat;
+
+
+    transform: translate(-50%, -50%);
   }
 }
