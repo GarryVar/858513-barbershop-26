@@ -4,12 +4,26 @@
     background-color: rgb(0, 0, 0);
   }
 }
+
 .main-nav__list {
   display: flex;
   align-items: center;
 
   min-width: 100%;
   min-height: 72px;
+}
+
+@media(max-width: 760px) {
+  .main-nav {
+    &--bg-black {
+      background-color: brown;
+    }
+  }
+
+  .main-nav__list {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 .main-nav__item {
@@ -67,6 +81,15 @@
 
   &:last-child {
     margin-left:  auto;
+  }
+}
+
+@media(max-width: 760px) {
+  .main-nav__item {
+    min-width: 100%;
+
+    border-top: 1px solid #891f1f;
+    border-bottom: 1px solid #b03939;
   }
 }
 

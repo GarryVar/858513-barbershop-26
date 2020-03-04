@@ -1,0 +1,36 @@
+.socials__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials__item {
+  width: 43px;
+  height: 43px;
+}
+
+.socials__text {
+  margin-bottom: 20px;
+
+  text-align: center;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 43px;
+  height: 43px;
+
+  background-color: rgb(0, 0, 0);
+}
+
+.socials__link:hover {
+  background-color: rgb(255, 255, 255);
+   path {
+    fill: black;
+  }
+}
+
+
+

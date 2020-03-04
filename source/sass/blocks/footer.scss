@@ -1,0 +1,33 @@
+.page-footer {
+  &--bg {
+    background-color: #242424;
+  }
+}
+
+.page-footer__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 65px;
+
+  min-height: 193px;
+}
+
+.page-footer__address {
+  padding-right: 10px;
+
+  min-width: 320px;
+}
+
+.page-footer__socials {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  width: 180px;
+}
+
+.page-footer__copyright {
+  padding-left: 10px;
+  width: 160px;
+}

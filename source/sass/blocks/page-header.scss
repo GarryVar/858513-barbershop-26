@@ -12,3 +12,18 @@
   margin-top: 70px;
   order: 2;
 }
+
+@media(max-width: 760px) {
+  .page-header__body {
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: rgb(0, 0, 0);
+  }
+
+  .page-header__logo {
+    order: -1;
+
+    margin: 0;
+  }
+}
