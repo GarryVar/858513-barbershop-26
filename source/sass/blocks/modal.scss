@@ -10,9 +10,14 @@
     animation-duration: 0.2s;
   }
 
+  &--hide-window-anim {
+    animation-name: toBottomAnim;
+    animation-duration: 0.2s;
+  }
+
   &--error {
-   animation-name: error;
-  animation-duration: 0.2s;
+    animation-name: error;
+    animation-duration: 0.6s;
   }
 
   &--position {
@@ -245,7 +250,7 @@
 }
 
 input[type="checkbox"]:checked + .modal__form-checkbox {
-  background-image: url("../img/icon-cross.svg");
+  background-image: url("../img/icon-checkbox.svg");
   background-position: center;
   background-size: 10px;
   background-repeat: no-repeat;
@@ -263,14 +268,40 @@ input[type="checkbox"]:checked + .modal__form-checkbox {
   }
 }
 
-@keyframes error {
+@keyframes toBottomAnim {
   0% {
-    transform: translateX(5px) translateX(-50%);
+    transform: translateY(0) translateX(-50%);
+    opacity: 1;
   }
 
   100% {
-    transform: translateY(-5px) translateX(-50%);
+    transform: translateY(-40px) translateX(-50%);
+    opacity: 0;
   }
 }
 
+@keyframes error {
+  0%,
+  100% {
+    transform: rotate(0) translateX(-50%);
+    transform-origin: 0 50% 0;
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: rotate(-1deg) translateX(-50%);
+    transform-origin: 0 50% 0;
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: rotate(1deg) translateX(-50%);
+    transform-origin: 0 50% 0;
+  }
+}
 
